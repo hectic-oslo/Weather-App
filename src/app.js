@@ -13,7 +13,7 @@ const partialsPath=path.join(__dirname,'../template/partials')
  app.set('view engine','hbs')
  app.set('views',viewpath)
  hbs.registerPartials(partialsPath)
-
+ const PORT = process.env.PORT || 5001;
  //setup static directory to serve
  app.use(express.static(publicDirectoryPath))
  
@@ -76,4 +76,4 @@ app.get('*',(req,res)=>{
 
 })
 
-app.listen(3000,()=>{console.log("server started at port 3000")})
+app.listen(PORT,()=>{console.log("server started at port 3000")})
