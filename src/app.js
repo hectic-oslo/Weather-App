@@ -3,7 +3,9 @@ var hbs = require('hbs')
 const express = require('express')
 const app = express()
 const forecast=require('./forecast')
-const { request } = require('express')
+
+
+
 //define path for express config.
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewpath=path.join(__dirname,'../template/views')
@@ -13,7 +15,10 @@ const partialsPath=path.join(__dirname,'../template/partials')
  app.set('view engine','hbs')
  app.set('views',viewpath)
  hbs.registerPartials(partialsPath)
- const PORT = process.env.PORT || 5001;
+
+ const PORT = process.env.PORT || 3000;
+
+
  //setup static directory to serve
  app.use(express.static(publicDirectoryPath))
  
@@ -76,4 +81,4 @@ app.get('*',(req,res)=>{
 
 })
 
-app.listen(PORT,()=>{console.log("server started at port 3000")})
+app.listen(PORT,()=>{console.log("server started at port "+PORT)})

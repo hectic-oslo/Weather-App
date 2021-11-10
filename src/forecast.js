@@ -16,7 +16,7 @@ const forecast =(address,callback)=>{
         }
         else if(response.body.error)
         {
-            console.log("inside error")
+           
             callback("unable to get city.try another search!",undefined)
         }
         else
