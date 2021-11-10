@@ -1,0 +1,47 @@
+img {
+    height: 98px;
+    width: auto;
+}
+ #input {
+    border: 2px solid grey;
+}
+#btn {
+    border: 2px solid green;
+}
+body {
+    background-color:rgb(180, 233, 180);
+}
+button:hover{
+    background-color: blue;
+}
+#message-1{
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#message-2{
+    font-size: 22px;
+    text-align: center;
+}
+.form{
+    margin: auto;
+     width: 28%;
+    border: 3px solid green;
+     padding: 10px;
+     border-radius: 12px;
+}
+#header{
+    text-align: center;
+}
+#footer{
+    margin-top:156px ;
+    text-align: center;
+}
+
+
+#header .header-part a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(75, 78, 224);
+    font-weight: 200;
+}
