@@ -6,6 +6,9 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 weatherForm.addEventListener('submit', (e) => {
+    //hy this is collaboration from shubham
+    console.log("abc-e",e);
+    
     e.preventDefault()
 
     const location = search.value
